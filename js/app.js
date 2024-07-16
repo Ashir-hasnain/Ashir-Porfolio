@@ -46,19 +46,19 @@ if (element < 25) {
 }
 
 
-var imgSliderData = {
-    img1 :' https://www.hubspot.com/hs-fs/hubfs/free-website-builder.png?width=595&height=400&name=free-website-builder.png ',
-    img2 :' https://www.salesforce.com/ca/blog/wp-content/uploads/sites/12/2023/10/wireframe-web-design-og.jpg ',
-    img3 :' https://www.iwantclarity.com/wp-content/uploads/2018/10/Website-Redesign-More-Than-Just-Aesthetics@2x-100.jpg ',
-}
+// var imgSliderData = {
+//     img1 :' https://www.hubspot.com/hs-fs/hubfs/free-website-builder.png?width=595&height=400&name=free-website-builder.png ',
+//     img2 :' https://www.salesforce.com/ca/blog/wp-content/uploads/sites/12/2023/10/wireframe-web-design-og.jpg ',
+//     img3 :' https://www.iwantclarity.com/wp-content/uploads/2018/10/Website-Redesign-More-Than-Just-Aesthetics@2x-100.jpg ',
+// }
 
-var imgSlider = document.querySelector(".img-slider");
+// var imgSlider = document.querySelector(".img-slider");
 
-for (const key in imgSliderData) {
-        const element = imgSliderData[key];
-        imgSlider.innerHTML += `
-        <div class="carousel-item active">
-            <img src="${element}" class="img-fluid object-fit-cover" alt="img" height="800px">
-        </div>
-        `
-}
+// for (const key in imgSliderData) {
+//         const element = imgSliderData[key];
+//         imgSlider.innerHTML += `
+//         <div class="carousel-item active">
+//             <img src="${element}" class="img-fluid object-fit-cover" alt="img" height="800px">
+//         </div>
+//         `
+// }
