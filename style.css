@@ -2,7 +2,47 @@
     color: white;
     transition: .2s ease;
 }
+.nav-link{
+    border-radius: 25px;
+}
+.nav-link:hover{
+    background: seagreen;
+}
 
 h1{
     font-size: 5rem;
+}
+
+.bg-seagreen{
+    background-color: seagreen;
+    color: whitesmoke;
+    font-weight: 500;
+    border: none;
+    
+}
+.btn:hover{
+    background-color: rgb(0, 72, 31);
+    
+
+}
+
+.img-skill{
+    filter: drop-shadow(0 0 10px seagreen);
+    
+}
+.link-img{
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("asset/img/Izuku_Midoriya.webp");
+    background-repeat: no-repeat;
+    object-position: fixed;
+    object-fit: fill;
+    cursor: pointer;
+}
+
+.link-img:hover{
+    filter: drop-shadow(0 0 50px seagreen);
+
 }

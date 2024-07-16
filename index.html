@@ -13,6 +13,11 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="style.css" class="css">
+
+
+    <!-- Aos Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body class="bg-dark">
@@ -33,22 +38,22 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active px-3" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link px-3" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Links</a>
+                                <a class="nav-link px-3" href="#">Links</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Porfolio</a>
+                                <a class="nav-link px-3" href="#">Porfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link px-3" href="#">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link px-3" href="#">Contact</a>
                             </li>
 
                         </ul>
@@ -60,22 +65,27 @@
 
     <div class="container mt-md-5 about-me">
         <div class="row mt-5 ">
-            <div class="col-lg-6 col-md-12 justify-content-center align-content-center">
+            <div class="col-lg-6 col-md-12 justify-content-center align-content-center" data-aos-delay="500"
+                data-aos="fade-right">
                 <h1 class="h1  font-monospace my-4  text-danger">Hi! <span class="h2 text-light"> I am M. Ashir Hasnain,
                     </span></h1>
-                <p class="text-bg-dark  font-monospace">I'm excited to begin my journey in web
+                <p class="text-bg-dark  font-monospace" data-aos-delay="800" data-aos="fade-right">I'm excited to begin
+                    my journey in web
                     development. I have
                     foundational knowledge in HTML5, CSS3, and
                     JavaScript and am eager to learn new technologies and frameworks. I have a strong interest in
                     creating visually pleasing and user-friendly websites, I'm a team player with good communication
                     skills, ready to contribute to projects and gain valuable experience in web development</p>
                 <div class="row">
-                    <a href="#" class="col-5 col-sm-3  mx-2  btn btn-sm btn-lg bg-info text-bg-dark">Downlaod CV</a>
-                    <a href="#" class="col-5 col-sm-3  mx-2  btn btn-sm btn-lg bg-danger text-bg-dark">About More</a>
+                    <a href="#" class="col-5 col-sm-3  mx-2  btn btn-sm btn-lg bg-seagreen text-bg-dark"
+                        data-aos-delay="1000" data-aos="fade-right">Downlaod CV</a>
+                    <a href="#" class="col-5 col-sm-3  mx-2  btn btn-sm btn-lg bg-seagreen" data-aos-delay="1000"
+                        data-aos="fade-right">About More</a>
                 </div>
             </div>
 
-            <div class="col-lg-6 col-md-12 col-sm-12  d-flex justify-content-center">
+            <div class="col-lg-6 col-md-12 col-sm-12  d-flex justify-content-center" data-aos-delay="500"
+                data-aos="fade-left">
                 <img class="rounded-circle img-fluid mt-5"
                     src="https://i.pinimg.com/originals/20/b2/65/20b26511f80117bc6f587b5a76cf5ffe.jpg" alt="img"
                     width="600px">
@@ -87,26 +97,14 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-12 text-center my-5">
-                <h1 class="text-danger fw-bolder font-monospace">Skill</h1>
+                <h1 class="text-danger fw-bolder font-monospace" data-aos="zoom-in-up" data-aos-delay="300">Skill</h1>
                 <hr class="border-danger">
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-4">
-                        <div id="carouselExample" class="carousel slide">
-                            <div class="carousel-inner img-slider">
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
+                        <img src="asset/img/dfqt4uj-69faa940-be28-493c-a821-d1027c995050.png" alt="img"
+                            class="img-fluid h-75 img-skill"   data-aos="flip-right">
                     </div>
                     <div class="col-12 col-lg-8">
                         <div class="container my-5 design-skill"></div>
@@ -116,17 +114,29 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        Ashir
+    <div class="container my-5">
+        <div class="link-img" data-aos="zoom-in" data-aos-anchor-placement="center">
+        </div>
     </div>
 
 
+    <footer class="container-fluid">
+
+
+    </footer>
+
 
 </body>
+<!-- Aos Js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+<!-- bootstrap js -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
+<!-- personal js -->
 <script src="js/app.js"></script>
 
 

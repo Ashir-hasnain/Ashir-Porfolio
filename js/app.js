@@ -1,6 +1,10 @@
+AOS.init();
+
+
 var skilldata = {
     HTML: 98,
     CSS: 80,
+    Bootstrape: 90,
     Javascript: 60,
     Jqruey: 90,
     Python: 50,
@@ -26,13 +30,13 @@ if (element < 25) {
     color = 'bg-primary'
 }    
     skillSection.innerHTML += `
-    <div class="row my-3">
+    <div class="row my-3" data-aos= "zoom-out-left">
     <div class="col-6">
         <h5>${key}</h5>
     </div>
     <div class="col-6">
         <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar ${color} progress-bar-striped progress-bar-animated" style="width: ${element}%"></div>
+            <div class="progress-bar ${color} progress-bar-striped progress-bar-animated" style="width: ${element}%"  ></div>
         </div>
   
 
