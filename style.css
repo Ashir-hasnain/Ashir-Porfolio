@@ -24,6 +24,7 @@ i:hover{
     color: white;
     transition: .2s ease;
     /* overflow-x: hidden; */
+    
 }
 .nav-link{
     border-radius: 25px;
