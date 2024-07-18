@@ -118,4 +118,3 @@ for (const key in skilldata) {
 </div>
     `;
 }
-
