@@ -37,11 +37,15 @@ var nav = document.querySelector(".my-navbar-js").innerHTML = `
                 <li class="nav-item">
                     <a class="nav-link px-3" href="#contact">Contact</a>
                 </li>
+                </ul>
+
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item"  id="ld">
-                    <i class="nav-link px-3 fa-solid fa-moon "></i>
-                    
+                    <i class="nav-link px-3 fa-solid fa-moon "></i>                    
                 </li>
-            </ul>
+
+                </ul>
+                
         </div>
     </div>
 </div>

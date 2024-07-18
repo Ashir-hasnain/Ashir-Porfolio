@@ -4,13 +4,9 @@
 i{
     font-size: 2rem;
     cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    padding: 0 50px;
-    align-items: center;
     /* border-radius: 100%; */
 }
-i:hover{
+.row i:hover{
     /* background-color: whitesmoke; */
     color: seagreen;
     font-size: 1.9rem;
@@ -32,6 +28,7 @@ i:hover{
     color: white;
     transition: .2s ease;
     /* overflow-x: hidden; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 
