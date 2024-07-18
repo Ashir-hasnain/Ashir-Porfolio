@@ -1,4 +1,8 @@
 AOS.init();
+
+
+
+
 var nav = document.querySelector(".my-navbar-js").innerHTML = `
 <nav class="navbar navbar-expand-md navbar-dark justify-content-evenly">
 <div class="container">
@@ -19,21 +23,24 @@ var nav = document.querySelector(".my-navbar-js").innerHTML = `
                     <a class="nav-link active px-3" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#">About</a>
+                    <a class="nav-link px-3" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#">Links</a>
+                    <a class="nav-link px-3" href="#link">Links</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="portfolio.html">Porfolio</a>
+                    <a class="nav-link px-3" href="#portfolio">Porfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link px-3" href="#">Blog</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link px-3" href="#">Contact</a>
+                    <a class="nav-link px-3" href="#contact">Contact</a>
                 </li>
-
+                <li class="nav-item"  id="ld">
+                    <i class="nav-link px-3 fa-solid fa-moon "></i>
+                    
+                </li>
             </ul>
         </div>
     </div>
@@ -42,6 +49,14 @@ var nav = document.querySelector(".my-navbar-js").innerHTML = `
 
 `;
 
+
+
+var darkLight = document.querySelector("#ld")
+darkLight.onclick = function () {
+        var body = document.querySelector("body");
+        body.classList.toggle(".activebg");
+
+}
 
 var my_footer = document.querySelector(".my-footer").innerHTML = `
             <div class="row">
@@ -60,11 +75,12 @@ var skilldata = {
     Bootstrape: 90,
     Javascript: 60,
     Jqruey: 90,
-    Python: 50,
+    Sql: 50,
     Wordpress: 90,
     Git: 70,
     PHP: 30,
     Laravel: 10,
+    Python: 50,
 }
 
 
@@ -89,8 +105,8 @@ for (const key in skilldata) {
         <h5>${key}</h5>
     </div>
     <div class="col-6">
-        <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress-bar ${color} progress-bar-striped progress-bar-animated" style="width: ${element}%"  ></div>
+        <div class="progress" role="progressbar" aria-label="example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar ${color} progress-bar progress-bar" style="width: ${element}%"  ></div>
         </div>
   
 

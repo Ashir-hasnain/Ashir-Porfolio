@@ -6,25 +6,37 @@ i{
     cursor: pointer;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
+    padding: 0 50px;
+    align-items: center;
+    /* border-radius: 100%; */
 }
 i:hover{
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     color: seagreen;
     font-size: 1.9rem;
-    box-shadow: 0 0 5px seagreen;
+    /* box-shadow: 0 0 5px seagreen; */
 }
 
 
+.bg{
+    background: #fff;
+    color: #222;
+}
 
-
-
+.activebg{
+    background: #fff;
+    color: #000;
+}
 
 *{
     color: white;
     transition: .2s ease;
     /* overflow-x: hidden; */
     
+}
+
+body{
+    overflow-x: hidden;
 }
 .nav-link{
     border-radius: 25px;
@@ -75,4 +87,17 @@ h1{
 .link-img:hover{
     filter: drop-shadow(0 0 50px seagreen);
 
+}
+
+.my-links{
+    width: 100vw;
+    height: 60vh;
+    background-image: url("asset/Images/11.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
