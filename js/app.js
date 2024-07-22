@@ -1,6 +1,11 @@
 AOS.init();
 
+var cursur = document.querySelector(".cursur")
 
+window.addEventListener("mousemove" , (e)=>{
+    cursur.style.top = e.y+"px"
+    cursur.style.left = e.x+"px"
+})
 
 
 var nav = document.querySelector(".my-navbar-js").innerHTML = `

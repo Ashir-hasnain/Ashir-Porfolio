@@ -1,4 +1,14 @@
-
+.cursur{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    background-color: sandybrown;
+    z-index: 50;
+    transition: .5s ease-in-out;
+}
 
 
 i{
