@@ -3,26 +3,30 @@ AOS.init();
 var cursur = document.querySelector(".cursur")
 
 window.addEventListener("mousemove" , (e)=>{
-    cursur.style.top = e.y+"px"
-    cursur.style.left = e.x+"px"
+    gsap.to(cursur , {
+        x: e.x,
+        y: e.y,
+        duration : 0.5,
+        ease : "elastic.out(1,0.3)",
+    })
 })
 
 
 var nav = document.querySelector(".my-navbar-js").innerHTML = `
-<nav class="navbar navbar-expand-md navbar-dark justify-content-evenly">
+<nav class="navbar navbar-expand-md  justify-content-evenly">
 <div class="container">
     <a class="navbar-brand fs-1 fw-bold" href="index.html">Ashir</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><a href="asset/Images/Icon/menu.png"></a></span>
     </button>
-    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
         aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title text-bg-dark" id="offcanvasNavbarLabel">Menu</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body text-bg-dark">
+        <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
                     <a class="nav-link active px-3" aria-current="page" href="index.html">Home</a>
@@ -111,7 +115,7 @@ for (const key in skilldata) {
     skillSection.innerHTML += `
     <div class="row my-3" data-aos= "zoom-out-left">
     <div class="col-6">
-        <h5>${key}</h5>
+        <h5 class="text-dark" >${key}</h5>
     </div>
     <div class="col-6">
         <div class="progress" role="progressbar" aria-label="example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">

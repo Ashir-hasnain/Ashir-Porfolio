@@ -1,24 +1,29 @@
 .cursur{
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     position: fixed;
     border-radius: 100px;
     top: 0;
     left: 0;
-    background-color: sandybrown;
-    z-index: 50;
-    transition: .5s ease-in-out;
+    background-color: aliceblue;
+    filter: invert(50);
+    z-index: 0;
+    /* transition: .5s ease-in-out; */
 }
 
 
 i{
+    /* color: #222; */
+    filter: invert(100);
+    color: rgb(13, 186, 255);
     font-size: 2rem;
     cursor: pointer;
     /* border-radius: 100%; */
 }
 .row i:hover{
+    filter: invert(0);
     /* background-color: whitesmoke; */
-    color: seagreen;
+    color: rgb(202, 32, 32);
     font-size: 1.9rem;
     /* box-shadow: 0 0 5px seagreen; */
 }
@@ -35,8 +40,8 @@ i{
 }
 
 *{
-    color: white;
-    transition: .2s ease;
+    /* color: white; */
+    transition: .1s ease;
     /* overflow-x: hidden; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
@@ -49,7 +54,8 @@ body{
     border-radius: 25px;
 }
 .nav-link:hover{
-    background: seagreen;
+    background: rgb(187, 20, 20);
+    color: aliceblue;
 }
 
 .navbar-toggler-icon{
